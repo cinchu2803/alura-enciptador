@@ -121,13 +121,13 @@ footer{
 /* Small devices (portrait phones) */
 @media only screen and (max-width: 576px) {
     main {
-      flex-direction: column;
-      align-items: center;
-      margin-left: 0;
+      margin-left: 20px;
+      display: flex;
+      flex-direction: row;
     }
   
     .mensaje {
-      margin-left: 0;
+      margin-left: 20px;
       margin-top: 20px;
       width: 100%; /* Occupy full width */
       position: relative;
@@ -144,10 +144,12 @@ footer{
   /* Tablets (portrait and landscape) */
   @media only screen and (min-width: 577px) and (max-width: 1024px) {
     main {
-      margin-left: 20%; /* Adjust as needed */
+      margin-left:0; /* Adjust as needed */
+      
+      display: inline-block;
+    text-align: start;
     }
   
-    .primeraColumna,
     .segundaColumna {
       width: 40%; /* Equal column width on tablets */
     }
@@ -158,20 +160,4 @@ footer{
     }
   }
   
-  /* Notebooks and desktops */
-  @media only screen and (min-width: 1025px) {
-    main {
-      margin-left: 5%; /* Adjust as needed */
-    }
-  
-    .primeraColumna,
-    .segundaColumna {
-      width: 30%; /* Equal column width on larger screens */
-    }
-  
-    .btn-copiar {
-      margin-left: 0;
-      margin-top: 20px; /* Adjust as needed */
-      position: relative;
-    }
-  }
+ 
