@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
+box-sizing: border-box;
 background: #F3F5FC;
 font-family: Inter;
 font-weight: 300;
@@ -18,10 +19,10 @@ line-height: 150%;
 }
 
 main {
-    display: flex;
+   display:flex;
     margin-bottom: 50px;
     margin-left: 80px;
-    position: absolute;
+    position: relative;
 }
 
 .text-area {
@@ -55,6 +56,7 @@ main {
 .botones {
     display: flex;
     margin-top: 8px;
+    justify-content: left;
 
 }
 
@@ -88,7 +90,7 @@ main {
     height: 67px;
     margin-left: 108px;
     margin-top: 402px;
-    position: absolute;
+    position: relative;
     width: 336px;
 
 }
@@ -97,3 +99,79 @@ main {
     color: #495057;
     font-size: 18px;
 }
+
+
+footer{
+    background: #0A3871;
+    display: flex;
+    justify-content: center;
+}
+
+.dev{
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 12px;
+    font-family: inherit;
+
+}
+
+/* Media Queries */
+
+/* Small devices (portrait phones) */
+@media only screen and (max-width: 576px) {
+    main {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+    }
+  
+    .mensaje {
+      margin-left: 0;
+      margin-top: 20px;
+      width: 100%; /* Occupy full width */
+      position: relative;
+    }
+  
+    .btn-copiar {
+      margin-left: 0;
+      margin-top: 20px;
+      width: 100%; /* Occupy full width */
+      position: relative;
+    }
+  }
+  
+  /* Tablets (portrait and landscape) */
+  @media only screen and (min-width: 577px) and (max-width: 1024px) {
+    main {
+      margin-left: 20%; /* Adjust as needed */
+    }
+  
+    .primeraColumna,
+    .segundaColumna {
+      width: 40%; /* Equal column width on tablets */
+    }
+  
+    .mensaje,
+    .btn-copiar {
+      width: 60%; /* Occupy full width */
+    }
+  }
+  
+  /* Notebooks and desktops */
+  @media only screen and (min-width: 1025px) {
+    main {
+      margin-left: 5%; /* Adjust as needed */
+    }
+  
+    .primeraColumna,
+    .segundaColumna {
+      width: 30%; /* Equal column width on larger screens */
+    }
+  
+    .btn-copiar {
+      margin-left: 0;
+      margin-top: 20px; /* Adjust as needed */
+      position: relative;
+    }
+  }
