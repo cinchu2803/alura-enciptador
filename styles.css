@@ -103,16 +103,18 @@ main {
 
 footer{
     background: #0A3871;
-    display: flex;
-    justify-content: center;
+    
 }
 
 .dev{
+    background: #0A3871;
+    display: flex;
     justify-content: center;
     font-size: 18px;
     font-weight: bolder;
     margin-top: 12px;
     font-family: inherit;
+    color: #F3F5FC;
 
 }
 
@@ -121,16 +123,17 @@ footer{
 /* Small devices (portrait phones) */
 @media only screen and (max-width: 576px) {
     main {
-      margin-left: 20px;
-      display: flex;
-      flex-direction: row;
+        display: inline-block;
+        text-align: start;
+        margin-left: 0;
     }
   
     .mensaje {
-      margin-left: 20px;
-      margin-top: 20px;
+      margin-left: 0;
+      margin-top: 10px;
       width: 100%; /* Occupy full width */
       position: relative;
+      background-position: center;
     }
   
     .btn-copiar {
@@ -138,6 +141,9 @@ footer{
       margin-top: 20px;
       width: 100%; /* Occupy full width */
       position: relative;
+    }
+     .dev{
+        width: 100%;
     }
   }
   
